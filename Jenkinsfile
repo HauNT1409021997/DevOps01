@@ -5,6 +5,7 @@ pipeline {
             agent { label 'nodejs-slave-8f3f9c84' }
             steps {
                 echo 'Building Node.js project...'
+                echo 'Building Node.js project...'
                 sh 'npm install --prefix /home/reactApp'
                 sh 'npm run build --prefix /home/reactApp'
             }
