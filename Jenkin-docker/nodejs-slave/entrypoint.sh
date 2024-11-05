@@ -6,6 +6,7 @@ set -e
 # Wait for Jenkins master to be ready
 echo "Waiting for Jenkins master to be ready..."
 echo "Waiting for Jenkins master to be ready..."
+echo "Waiting for Jenkins master to be ready..."
 until curl -s "${JENKINS_URL}/login" > /dev/null; do
     sleep 5
 done
